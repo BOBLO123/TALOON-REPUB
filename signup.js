@@ -8,11 +8,11 @@ function check(x){
   } else {
     alert("Password must be at least 6 characters long")
 }
-function signup(x, y){
+function signup(x){
   //add user to sign in objects
   username = document.getElementById('name').value
   pass = document.getElementById('pass').value
-  let user = object.create(y)
+  let user = object.create(x)
   user.name = username
   user.pass = pass
   alert('${user.name} ${user.pass}')
