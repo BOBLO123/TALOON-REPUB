@@ -2,7 +2,7 @@
 function check(x){
   // id should have quotes around it
   value = document.getElementById(x).value
-  if (value > 6){
+  if (value.length > 6){
     signup()
   
   } else {
