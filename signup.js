@@ -3,12 +3,12 @@ function check(x){
   // id should have quotes around it
   value = document.getElementById(x).value
   if (value > 6){
-    signup(x)
+    signup()
   
   } else {
     alert("Password must be at least 6 characters long")
 }
-function signup(x){
+function signup(){
   //add user to sign in objects
   username = document.getElementById('name').value
   pass = document.getElementById('pass').value
