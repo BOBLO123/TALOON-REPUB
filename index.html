@@ -11,11 +11,11 @@
     <hr>
     <script src="signup.js"></script>
     <style src="signup.css"></style>
-   <form onsubmit="check('pass')">
+   <form onsubmit="check('pass'); signup('name') ">
   <label for="fname">Name:</label><br>
   <input type="text" id="name" name="name" placeholder="Input here"><br>
   <label for="lname">Password:</label><br>
-  <input type="text" id="pass" name="pass" placeholder="Password"><br><br>
+  <input type="text" id="pass" name="pass" placeholder="Password (at least 6 characters)"><br><br>
   <input type="submit" value="Submit">
   </form> 
 
