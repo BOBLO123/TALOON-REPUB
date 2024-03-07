@@ -12,7 +12,7 @@ function signup(x){
   //add user to sign in objects
   username = document.getElementById('name').value
   pass = document.getElementById('pass').value
-  let user = object.create(x)
+  let user = object.create(username)
   user.name = username
   user.pass = pass
   alert('${user.name} ${user.pass}')
