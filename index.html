@@ -10,22 +10,16 @@
     <p>Please fill in this form to have enter the T.A.L.R.</p>
     <hr>
 
-    <label for="email"><b>name</b></label>
-    <input type="text" placeholder="Enter name" name="name" required>
+   <form onsubmit="signup.js">
+  <label for="fname">Name:</label><br>
+  <input type="text" id="name" name="name" value="Input here"><br>
+  <label for="lname">Password:</label><br>
+  <input type="text" id="pass" name="pass" value="Password"><br><br>
+  <input type="submit" value="Submit">
+  </form> 
 
-<label for="email"><b>snap user</b></label>
-    <input type="text" placeholder="if you aint got a snap put your number" name="name" required>
-
-    
-    <label>
-      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-    </label>
-    
     <p>By signing up for the T.A.L.R you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
-    <div class="clearfix">
-      <button><a href="talrmain.html">sign up</button></a>
-      <button type="submit" class="tarlmain">Sign Up2</button>
     </div>
   </div>
 </form>
