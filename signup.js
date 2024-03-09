@@ -4,7 +4,7 @@ fetch("/private/usr.json")
 function signup(){
   let username = document.getElementById("name").value
   let pass = document.getElementById("pass").value
-  const users = JSON.parse("{'usrname':" + username + ", 'password':" + pass + "}")
+  const users = JSON.parse("{'usrname':${username}, password:${pass}}")
   if (users = "{'usrname':" + username + ", 'password':" + pass + "}"){
     alert("Account Already Exists")
   } else{
