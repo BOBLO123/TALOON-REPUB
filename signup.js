@@ -9,7 +9,8 @@ function signup(){
     alert("Account Already Exists")
   } else{
     let newuser = {username: username, pass: pass}
-    let adduser = JSON.stringify(newuser)
+    JSON.stringify(newuser)
+    
   }
 }
 //sign in
