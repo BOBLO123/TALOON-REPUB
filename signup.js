@@ -1,15 +1,20 @@
 //Third time I've completely restarted
 
-if(!localStorage.getItem("credentials")) localStorage.setItem("credentials", JSON.stringify([]));
-
-var arr = JSON.parse(localStorage.getItem("credentials"));
-console.log(arr)
-
-let user_name = document.getElementById("username");
-let user_paswrd = document.getElementById("password");
-
-let store_data = () => {
-  credentials.push({username: user_name, password: user_paswrd});
-  localStorage.setItem("credentials", JSON.stringify(arr))
-  location.reload()
-};
+function signup(){
+  let exist = localStorage.getItem("username")
+  let exist2 = localStorage.getItem("password")
+  if (exist != null){
+    alert("User Already Exists")
+  } else if (exist2 != null){
+    alert("User Already Exists")
+  } else{
+  localStorage.setItem("username", document.getElementById('username'));
+  localStorage.setItem("password", document.getElementById('password'));
+  }
+}
+function signin(){
+  localStorage.getItem("username")
+  localStorage.getItem("password")
+  let signedin = ["true", exist, exist2]
+  location.replace("talrmain.html")
+}
