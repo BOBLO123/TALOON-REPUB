@@ -11,5 +11,5 @@ let user_paswrd = document.getElementById("password");
 let store_data = () => {
   credentials.push({username: user_name, password: user_paswrd});
   localStorage.setItem("credentials", JSON.stringify(arr))
-
+  location.reload()
 };
