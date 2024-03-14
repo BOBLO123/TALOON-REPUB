@@ -5,6 +5,7 @@ function signup(){
   let password = document.getElementById("password")
   localStorage.setItem("username-tal", document.getElementById('username'));
   localStorage.setItem("password-tal", document.getElementById('password'));
+  alert("Signed Up!")
   }
 }
 function signin(){
